@@ -4,29 +4,28 @@ let jsonDatabase = [
   {
     "time" : "3m ago",
     "username" : "ThisIsStanTwitter",
-    "tweets" : ["welcome to stan twitter!"]
-  },
-  {
-    "time" : "1h ago",
-    "username" : "pedropascalslover",
-    "picture_url" : "images/pedro2.jpeg",
-    "tweets" : ["I AM LITERALLY IN LOVE WITH THIS MAN PLEASE i would do anything for him"]
+    "tweets" : ["hello <3 join the stan twt community! let's be friends"]
   },
   {
     "time" : "25m ago",
-    "username" : "arisweetener",
-    "tweets" : ["reply if you're an ari stan to be in a huge gc n make friends!!!"]
+    "username" : "queenariana101",
+    "picture_url" : "images/arihearts.jpeg",
+    "tweets" : ["ari stans i love making new friends on here ur all so nice ily <3"]
   },
   {
-    "time" : "3h ago",
-    "username" : "mochijimins",
-    "picture_url" : "images/jimin.jpeg",
-    "tweets" : ["love of my life and light of my life i love u sm"]
+    "time" : "25m ago",
+    "username" : "darklinashadow",
+    "tweets" : ["just made a gc for s&b stans! reply to join and we can be bffs"]
+  },
+  {
+    "time" : "1h ago",
+    "username" : "buckys_arm",
+    "tweets" : ["i'm so happy that i met all of u thanks for making my days better"]
   },
   {
     "time" : "2h ago",
-    "username" : "folklorianwoods",
-    "tweets" : ["swifties follow me and let's be friends <3 "]
+    "username" : "goddessjisoo",
+    "tweets" : ["twt blinks are the best i love you all!!!"]
   }
 ];
 
@@ -45,7 +44,7 @@ function createElement(incomingJSON) {
   newContentElement.setAttribute('data-aos-duration', '1500');
 
 
-  // creates h3 headline for name, set class & set content
+  // creates h3 headline for time, set class & set content
   let newContentHeading = document.createElement("H3");
   newContentHeading.classList.add('contentTime');
   newContentHeading.innerText = incomingJSON['time'];
@@ -70,7 +69,6 @@ function createElement(incomingJSON) {
   }
 
 
-  // creates and adds a footer image
   /* PROF NOTE: We do not need to loop through the database again- we're just
     checking the json of our one post, incomingJSON.
     Also: We switched from "OR" (||) to "AND" (&&) in our if statement. */
@@ -81,6 +79,8 @@ function createElement(incomingJSON) {
       newContentElement.appendChild(newImage);
   // }
 }
+
+
 
 
   // adds the item to the page

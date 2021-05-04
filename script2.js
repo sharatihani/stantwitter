@@ -4,29 +4,31 @@ let jsonDatabase = [
   {
     "time" : "3m ago",
     "username" : "ThisIsStanTwitter",
-    "tweets" : ["welcome to stan twitter!"]
-  },
-  {
-    "time" : "1h ago",
-    "username" : "pedropascalslover",
-    "picture_url" : "images/pedro2.jpeg",
-    "tweets" : ["I AM LITERALLY IN LOVE WITH THIS MAN PLEASE i would do anything for him"]
+    "picture_url" : "",
+    "tweets" : ["give me likes and retweets now i need clout :( also why am I getting no interactions lately. do people hate me?"]
   },
   {
     "time" : "25m ago",
-    "username" : "arisweetener",
-    "tweets" : ["reply if you're an ari stan to be in a huge gc n make friends!!!"]
+    "username" : "nostalgialipa",
+    "picture_url" : "images/dualipa.jpeg",
+    "tweets" : ["day 289 of trying to get dua to notice me. keep rt'ing my fancam y'all"]
   },
   {
     "time" : "3h ago",
-    "username" : "mochijimins",
-    "picture_url" : "images/jimin.jpeg",
-    "tweets" : ["love of my life and light of my life i love u sm"]
+    "username" : "swifties89",
+    "tweets" : ["no one is interacting with me why does everyone hate me"]
   },
   {
     "time" : "2h ago",
-    "username" : "folklorianwoods",
-    "tweets" : ["swifties follow me and let's be friends <3 "]
+    "username" : "nickithequeen",
+    "picture_url" : "",
+    "tweets" : ["like and rt my previous tweet please 🙏🙏🙏"]
+  },
+  {
+    "time" : "2h ago",
+    "username" : "sebstan_angelman",
+    "picture_url" : "images/sebstan.jpeg",
+    "tweets" : ["i would literally walk through the depths of hell for this man WHEN IS HE GOING TO NOTICE ME"]
   }
 ];
 
@@ -45,7 +47,7 @@ function createElement(incomingJSON) {
   newContentElement.setAttribute('data-aos-duration', '1500');
 
 
-  // creates h3 headline for name, set class & set content
+  // creates h3 headline for time, set class & set content
   let newContentHeading = document.createElement("H3");
   newContentHeading.classList.add('contentTime');
   newContentHeading.innerText = incomingJSON['time'];
@@ -71,6 +73,7 @@ function createElement(incomingJSON) {
 
 
   // creates and adds a footer image
+
   /* PROF NOTE: We do not need to loop through the database again- we're just
     checking the json of our one post, incomingJSON.
     Also: We switched from "OR" (||) to "AND" (&&) in our if statement. */
@@ -81,7 +84,6 @@ function createElement(incomingJSON) {
       newContentElement.appendChild(newImage);
   // }
 }
-
 
   // adds the item to the page
   contentGridElement.appendChild(newContentElement);

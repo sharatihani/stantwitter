@@ -4,7 +4,7 @@ body{
   margin:0px;
   padding:0px;
   opacity: 0;
-    transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 #mainGrid {
@@ -19,6 +19,7 @@ body{
   "profile profile body body body body trend trend"
 }
 
+
 #header1{
   grid-area: header;
   position: fixed;
@@ -26,22 +27,22 @@ body{
   font-size: 3vw;
   text-align: center;
   background-color: white;
-  /* border-color: #31A9E0;
-  border-style: solid;
-  border-width: 4px; */
   height: 4vw;
   padding-top: 1vw;
   flex-direction: row;
   align-content: space-around;
   box-shadow: 3px 3px 20px black;
   z-index: +99;
+  padding-bottom: 1vw;
 
 }
 
 h1{
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: 700;
   margin-top: 0;
+  font-family: Montserrat;
+  color: #31A9E0;
 }
 
 #profileArea{
@@ -49,8 +50,15 @@ h1{
   background-color: #31A9E0;
   display: flex;
   flex-direction: column;
-  padding-top: 2vw;
+  padding-top: 5vw;
   text-align: center;
+}
+
+#profileContainer{
+  grid-area:profile;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-top: 2vw;
 }
 
 h2{
@@ -61,50 +69,71 @@ h2{
   margin-bottom: 0;
 }
 
+#profileArea h3{
+  font-size:2.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+
+}
+
 a{
   text-decoration: none;
   color:white;
 }
 
 #profileArea p{
-  font-size: 1.3vw;
+  font-size: 2.5vmin;
   font-family: Inconsolata;
+  font-weight: bold;
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-top: 1vw;;
-  line-height: 1.8vw;
+  margin-top: 2vw;;
+  line-height: 3vmin;
   color: white;
-  margin-bottom: 1vw;
-
 }
 
-#profileContainer{
-  grid-area:profile;
-  padding-left: 6vw;
-  padding-right: 6vw;
-  padding-top: 5vw;
+#bodyArea{
+  margin-top: 0px;
+  grid-area:body;
+  background-color: #EDEDED;
+  color: white;
+  font-size: 4vw;
+  font-family: 'Inconsolata', monospace;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#followButton{
-  grid-area:profile;
-  margin-top: 8px;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  /* border-style: solid;
-  border-color: black; */
-  background-color: #2B8BBA;
-  /* opacity: 0.6; */
-  transition: 0.4s;
-  border-radius: 2vw;
-  padding: 0.7vw;
-  font-size: 1.5vw;
+#infoArea{
+  grid-area:body;
+  height: 5vw;
+  margin-top: 5vw;
+  background-color: white;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 8px;
+  width: 20vw;
+}
+
+#infoHeadings{
+
+  font-size: 1.2vw;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
   font-family: Montserrat;
-  color: white;
-}
-
-#followButton:hover{
-  background-color: #2881AD;
-  cursor: pointer;
+  font-weight: 500;
+  margin: 0;
 }
 
 #fourColumnContainer{
@@ -119,68 +148,9 @@ a{
   width: 100%;
 
 }
-
-#profileArea h3{
-  font-size:2vw;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-style: oblique;
-  color: white;
-  margin-bottom: 0;
-  text-align: center;
-  padding-top: 1vw;
-  padding-right: 1vw;
-  padding-left: 1vw;
-
-}
-
-#bodyArea{
-  margin-top: 0px;
-  grid-area:body;
-  background-color: #EDEDED;
-  color: white;
-  font-size: 4vw;
-  font-family: 'Inconsolata', monospace;
-  padding: 3vw;
-  display: flex;
-  flex-direction: column;
-}
-
-#infoArea{
-  grid-area:body;
-  height: 5vw;
-  margin-top: 5vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  box-shadow: 3px 3px 10px black;
-  border-radius: 8px;
-}
-
-#infoHeadings{
-  /* grid-row: 1; */
-  display: flex;
-  flex-direction: row;
-  width: 36vw;
-  justify-content: space-between;
-  font-size: 1.2vw;
-  color: black;
-  font-weight: bolder;
-  text-align: center;
-  font-family: Montserrat;
-  font-weight: 500;
-  margin: 0;
-}
 #trendArea{
   grid-area:trend;
   background-color: white;
-
 }
 
 #trendsBox{
@@ -213,6 +183,15 @@ a{
   font-style: italic;
 }
 
+#happeningBox{
+  grid-area:trend;
+  height: 30vw;
+  padding:2vw;
+  margin-top: 4vw;
+  line-height: 3vw;
+  position: fixed;
+}
+
 .contentItem {
   margin-top: 3vw;
   display: flex;
@@ -225,6 +204,7 @@ a{
   background-color: white;
   margin-left: 2vw;
   margin-right: 2vw;
+  width: 35vw;
 }
 
 h3 {
@@ -246,4 +226,24 @@ h5 {
   font-size: 1.5vw;
   margin-top: 1vmin;
   margin-left: 1vw;
+}
+
+.footerImageContainer {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100%;
+
+}
+
+.footerImage {
+  width: 100%;
+  height: 20vw;
+  /* border: 0.6vmin solid #000; */
+  border-radius: 2vmin;
+  object-fit: cover;
+  object-position: center;
+  /* border-style: solid; */
+  /* -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.62); */
 }
