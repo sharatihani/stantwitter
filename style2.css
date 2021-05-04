@@ -114,7 +114,7 @@ a{
 
 #infoArea{
   grid-area:body;
-  height: 5vw;
+  /* height: 5vw; */
   margin-top: 5vw;
   background-color: white;
   text-align: center;

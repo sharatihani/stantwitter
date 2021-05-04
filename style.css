@@ -148,7 +148,7 @@ a{
 
 #infoArea{
   grid-area:body;
-  height: 5vw;
+  /* height: 5vw; */
   margin-top: 5vw;
   margin-left: 2vw;
   margin-right: 2vw;
