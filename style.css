@@ -88,7 +88,7 @@ a{
 #followButton{
   grid-area:profile;
   margin-top: 8px;
-  margin-left: 5vw;
+  margin-left: 5vw; 
   margin-right: 5vw;
   /* border-style: solid;
   border-color: black; */

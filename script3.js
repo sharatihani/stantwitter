@@ -2,7 +2,7 @@ let contentGridElement = document.getElementById('bodyArea');
 
 let jsonDatabase = [
   {
-    "time" : "3m ago",
+    "time" : "3m ago", 
     "username" : "ThisIsStanTwitter",
     "tweets" : ["hello <3 join the stan twt community! let's be friends"]
   },

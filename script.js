@@ -4,7 +4,7 @@ let jsonDatabase = [
   {
     "time" : "3m ago",
     "username" : "ThisIsStanTwitter",
-    "tweets" : ["welcome to stan twitter!"]
+    "tweets" : ["welcome to stan twitter!"] 
   },
   {
     "time" : "1h ago",

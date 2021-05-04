@@ -1,6 +1,6 @@
 let contentGridElement = document.getElementById('bodyArea');
 
-let jsonDatabase = [
+let jsonDatabase = [ 
   {
     "time" : "3m ago",
     "username" : "ThisIsStanTwitter",
